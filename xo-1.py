@@ -1,3 +1,11 @@
+print(" Игра Крестики-нолики для двух игроков: ")
+board = list(range(1,10))
+def draw(board):
+    print("_" * 13)
+    for i in range(3):
+       print("|", board[0+i*3], "|", board[1+i*3], "|", board[2+i*3], "|")
+       print("_" * 13)
+
 def main(board):
     counter = 0
     flag = False
